@@ -2,12 +2,12 @@ import React from "react";
 import { Row, Col } from 'antd';
 import { Card } from 'antd';
 
-const image1 = process.env.PUBLIC_URL + '/assets/images/modern-design.jpg';
-const image2 = process.env.PUBLIC_URL + '/assets/images/clean-design.jpg';
-const image3 = process.env.PUBLIC_URL + '/assets/images/great-support.jpg';
-const image4 = process.env.PUBLIC_URL + '/assets/images/easy-customise.jpg';
-const image5 = process.env.PUBLIC_URL + '/assets/images/unlimited-features.jpg';
-const image6 = process.env.PUBLIC_URL + '/assets/images/advanced-option.jpg';
+const image1 = '../../assets/images/modern-design.jpg';
+const image2 = '../../assets/images/clean-design.jpg';
+const image3 = '../../assets/images/great-support.jpg';
+const image4 = '../../assets/images/easy-customise.jpg';
+const image5 = '../../assets/images/unlimited-features.jpg';
+const image6 = '../../assets/images/advanced-option.jpg';
 
 const { Meta } = Card;
 

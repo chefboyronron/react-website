@@ -1,6 +1,5 @@
 import React from "react";
 import { Carousel, Button } from 'antd';
-import { DesktopOutlined } from '@ant-design/icons'; 
 
 const items = [
     {
@@ -32,7 +31,7 @@ function AppHero() {
                                 <p>{item.content}</p>
                                 <div className="btnHolder">
                                     <Button type="primary" size="large">Learn More</Button>
-                                    <Button size="large"><DesktopOutlined /> Watch a Demo</Button>
+                                    <Button size="large"><i className="fas fa-desktop"></i> Watch a Demo</Button>
                                 </div>
                             </div>
                         </div>
