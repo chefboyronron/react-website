@@ -2,12 +2,12 @@ import React from "react";
 import { Row, Col } from 'antd';
 import { Card } from 'antd';
 
-const image1 = '../../assets/images/modern-design.jpg';
-const image2 = '../../assets/images/clean-design.jpg';
-const image3 = '../../assets/images/great-support.jpg';
-const image4 = '../../assets/images/easy-customise.jpg';
-const image5 = '../../assets/images/unlimited-features.jpg';
-const image6 = '../../assets/images/advanced-option.jpg';
+const image1 = 'https://raw.githubusercontent.com/chefboyronron/react-website/master/public/assets/images/modern-design.jpg';
+const image2 = 'https://raw.githubusercontent.com/chefboyronron/react-website/master/public/assets/images/clean-design.jpg';
+const image3 = 'https://raw.githubusercontent.com/chefboyronron/react-website/master/public/assets/images/great-support.jpg';
+const image4 = 'https://raw.githubusercontent.com/chefboyronron/react-website/master/public/assets/images/easy-customise.jpg';
+const image5 = 'https://raw.githubusercontent.com/chefboyronron/react-website/master/public/assets/images/unlimited-features.jpg';
+const image6 = 'https://raw.githubusercontent.com/chefboyronron/react-website/master/public/assets/images/advanced-option.jpg';
 
 const { Meta } = Card;
 
