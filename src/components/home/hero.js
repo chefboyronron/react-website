@@ -30,8 +30,8 @@ function AppHero() {
                                 <h3>{item.title}</h3>
                                 <p>{item.content}</p>
                                 <div className="btnHolder">
-                                    <Button type="primary" size="large" loading="false">Learn More</Button>
-                                    <Button size="large" loading="false"><i className="fas fa-desktop"></i> Watch a Demo</Button>
+                                    <Button type="primary" size="large" loading="">Learn More</Button>
+                                    <Button size="large" loading=""><i className="fas fa-desktop"></i> Watch a Demo</Button>
                                 </div>
                             </div>
                         </div>
