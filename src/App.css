@@ -290,6 +290,8 @@ how it works
   background-attachment: fixed;
   color: #fff;
   position: relative;
+  height: 500px;
+  padding: 115px 0px;
 }
 
 .worksBlock:before {
@@ -320,6 +322,10 @@ how it works
   border-radius: 50%;
   width: 110px;
   height: 110px;
+}
+
+.b0 {
+  border: none;
 }
 
 /* 
@@ -459,6 +465,9 @@ responsive
   .pricingBlock .ant-row > div:nth-child(2) .ant-list-item {
     transform: scale(1);
   }
+}
+
+@media only screen and (max-width: 837px) {
 
   .mobileVisible {
     display: block;

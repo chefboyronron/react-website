@@ -6,10 +6,11 @@ import 'antd/dist/antd.min.css'
 // Custom components
 import Appheader from './components/common/header';
 import AppHome from './views/home';
+import AppFooter from './components/common/footer';
 
 // Ant Design Component
 import { Layout } from 'antd';
-const { Header, Content } = Layout;
+const { Header, Content, Footer } = Layout;
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
       <Content>
         <AppHome/>
       </Content>
+      <Footer>
+        <AppFooter/>
+      </Footer>
     </Layout>
   );
 }

@@ -25,7 +25,7 @@ const items = [
 
 function AppAbout() {
     return (
-        <div className="block aboutBlock">
+        <div id="about" className="block aboutBlock">
             <div className="container-fluid">
                 <div className="titleHolder">
                     <h2>About Us</h2>
@@ -38,7 +38,7 @@ function AppAbout() {
                 <Row gutter={[16, 16]}>
                     {items.map((item) => {
                         return (
-                            <Col span={8} key={item.key}>
+                            <Col span={8} xs={{span: 24}} sm={{span: 24}} md={{span: 8}} lg={{span: 8}} key={item.key}>
                                 <div className="content">
                                     <div className="icon">
                                         {item.icon}

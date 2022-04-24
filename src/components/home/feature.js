@@ -2,12 +2,38 @@ import React from "react";
 import { Row, Col } from 'antd';
 import { Card } from 'antd';
 
-const image1 = 'https://raw.githubusercontent.com/chefboyronron/react-website/master/public/assets/images/modern-design.jpg';
-const image2 = 'https://raw.githubusercontent.com/chefboyronron/react-website/master/public/assets/images/clean-design.jpg';
-const image3 = 'https://raw.githubusercontent.com/chefboyronron/react-website/master/public/assets/images/great-support.jpg';
-const image4 = 'https://raw.githubusercontent.com/chefboyronron/react-website/master/public/assets/images/easy-customise.jpg';
-const image5 = 'https://raw.githubusercontent.com/chefboyronron/react-website/master/public/assets/images/unlimited-features.jpg';
-const image6 = 'https://raw.githubusercontent.com/chefboyronron/react-website/master/public/assets/images/advanced-option.jpg';
+const items = [
+    {
+        key: 0,
+        title: 'Modern Design',
+        image: 'https://raw.githubusercontent.com/chefboyronron/react-website/master/public/assets/images/modern-design.jpg'
+    },
+    {
+        key: 1,
+        title: 'Clean and Elegant',
+        image: 'https://raw.githubusercontent.com/chefboyronron/react-website/master/public/assets/images/clean-design.jpg'
+    },
+    {
+        key: 2,
+        title: 'Great Support',
+        image: 'https://raw.githubusercontent.com/chefboyronron/react-website/master/public/assets/images/great-support.jpg'
+    },
+    {
+        key: 3,
+        title: 'Easy to Customise',
+        image: 'https://raw.githubusercontent.com/chefboyronron/react-website/master/public/assets/images/easy-customise.jpg'
+    },
+    {
+        key: 4,
+        title: 'Unlimited Features',
+        image: 'https://raw.githubusercontent.com/chefboyronron/react-website/master/public/assets/images/unlimited-features.jpg'
+    },
+    {
+        key: 5,
+        title: 'Advanced Options',
+        image: 'https://raw.githubusercontent.com/chefboyronron/react-website/master/public/assets/images/advanced-option.jpg'
+    }
+];
 
 const { Meta } = Card;
 
@@ -20,54 +46,15 @@ function AppFeature() {
                     <p>Obcaecati consequatur libero repudiandae, aperiam itaque laborum!</p>
                 </div>
                 <Row gutter={[16, 16]}>
-                    <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
-                        <Card
-                        hoverable
-                        cover={<img alt="Modern Design" src={image1} />}
-                        >
-                        <Meta title="Modern Design" />
-                        </Card>
-                    </Col>
-                    <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
-                        <Card
-                        hoverable
-                        cover={<img alt="Test" src={image2} />}
-                        >
-                        <Meta title="Clean and Elegant" />
-                        </Card>
-                    </Col>
-                    <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
-                        <Card
-                        hoverable
-                        cover={<img alt="Test" src={image3} />}
-                        >
-                        <Meta title="Great Support" />
-                        </Card>
-                    </Col>
-                    <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
-                        <Card
-                        hoverable
-                        cover={<img alt="Test" src={image4} />}
-                        >
-                        <Meta title="Easy to customise" />
-                        </Card>
-                    </Col>
-                    <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
-                        <Card
-                        hoverable
-                        cover={<img alt="Test" src={image5} />}
-                        >
-                        <Meta title="Unlimited Features" />
-                        </Card>
-                    </Col>
-                    <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
-                        <Card
-                        hoverable
-                        cover={<img alt="Test" src={image6} />}
-                        >
-                        <Meta title="Advanced Options" />
-                        </Card>
-                    </Col>
+                    {items.map((item)=> {
+                        return (
+                            <Col xs={{span:24}} sm={{span: 12}} md={{span: 12}} lg={{span: 8}} key={item.key}>
+                                <Card hoverable cover={<img alt={item.title}  src={item.image}/>}>
+                                    <Meta title={item.title} />
+                                </Card>
+                            </Col>
+                        );
+                    })}
                 </Row>
             </div>
         </div>
