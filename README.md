@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Deployed in [https://react-ts-esjlyy.stackblitz.io/](https://react-ts-esjlyy.stackblitz.io/)
+Deployed in [https://ron-reactjs-website.stackblitz.io](https://ron-reactjs-website.stackblitz.io)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
