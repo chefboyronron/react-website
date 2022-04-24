@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
-Deployed in [https://ron-reactjs-website.stackblitz.io](https://ron-reactjs-website.stackblitz.io)
+Deployed 
+ - [https://ron-reactjs-website.stackblitz.io](https://ron-reactjs-website.stackblitz.io)
+ - [https://ron-reactjs-website.netlify.app](https://ron-reactjs-website.netlify.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
